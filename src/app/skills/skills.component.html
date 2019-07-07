@@ -1,0 +1,15 @@
+<ion-content text-center padding>
+  <form #f="ngForm" (ngSubmit)="submitSkills(f)">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Skiils</ion-label>
+            <ion-input type="text" [(ngModel)]="skills" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>
