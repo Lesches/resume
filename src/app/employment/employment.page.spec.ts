@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmploymentComponent } from './employment.component';
+import { EmploymentPage } from './employment.page';
 
-describe('EmploymentComponent', () => {
-  let component: EmploymentComponent;
-  let fixture: ComponentFixture<EmploymentComponent>;
+describe('EmploymentPage', () => {
+  let component: EmploymentPage;
+  let fixture: ComponentFixture<EmploymentPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EmploymentComponent ],
+      declarations: [ EmploymentPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmploymentComponent);
+    fixture = TestBed.createComponent(EmploymentPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
