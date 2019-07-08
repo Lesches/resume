@@ -1,17 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>skills</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/employment">
+        <ion-icon name="checkmark" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <form #f="ngForm" (ngSubmit)="submitSkills(f)">
+  <form>
     <ion-grid>
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-label position="floating">Skiils</ion-label>
-            <ion-input type="text" [(ngModel)]="skills" required></ion-input>
+            <ion-label position="floating">Skills</ion-label>
+            <ion-input type="text" name="skills" [(ngModel)]="skills" required></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>

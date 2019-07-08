@@ -1,32 +1,61 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Employment</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/education">
+        <ion-icon name="checkmark" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <label>
-    Employer:
-    <input type="text" formControlName="employer">
-  </label>
+  <form>
 
-  <label>
-    Position:
-    <input type="text" formControlName="position">
-  </label>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Employer</ion-label>
+              <ion-input type="text" name="employer" [(ngModel)]="employer" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Position</ion-label>
+              <ion-input type="text" name="position" [(ngModel)]="position" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
 
-  <label>
-    Description:
-    <input type="text" formControlName="description">
-  </label>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Job Decription</ion-label>
+              <ion-input type="text" name="description" [(ngModel)]="description" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
 
-  <label>
-    Beginning Date:
-    <input type="text" formControlName="beginning">
-  </label>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Beginning Date</ion-label>
+              <ion-input type="email" name="beginning" [(ngModel)]="beginning" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
 
-  <label>
-    End Date:
-    <input type="text" formControlName="end">
-  </label>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">End Date</ion-label>
+              <ion-input type="text" name="end" [(ngModel)]="end" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </form>
 </ion-content>

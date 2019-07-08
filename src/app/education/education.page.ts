@@ -7,11 +7,10 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./education.page.scss'],
 })
 export class EducationPage implements OnInit {
-  education = new FormGroup({
-    level: new FormControl(''),
-    school: new FormControl(''),
-    graduation: new FormControl('')
-  });
+  level: string;
+  school: string;
+  graduation: string;
+
   constructor() { }
 
   ngOnInit() {

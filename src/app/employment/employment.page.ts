@@ -7,13 +7,12 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./employment.page.scss'],
 })
 export class EmploymentPage implements OnInit {
-  employment = new FormGroup({
-    employer: new FormControl(''),
-    position: new FormControl(''),
-    description: new FormControl(''),
-    beginning: new FormControl(''),
-    end: new FormControl('')
-  });
+  employer: string;
+  position: string;
+  description: string;
+  beginning: string;
+  end: string;
+
   constructor() { }
 
   ngOnInit() {

@@ -1,27 +1,45 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Education</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/print">
+        <ion-icon name="checkmark" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div formGroupName="education">
+  <form>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Level</ion-label>
+            <ion-input type="text" name="level" [(ngModel)]="level" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">School</ion-label>
+            <ion-input type="text" name="position" [(ngModel)]="school" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Graduation</ion-label>
+            <ion-input type="text" name="description" [(ngModel)]="graduation" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
 
-    <label>
-      Level:
-      <input type="text" formControlName="level">
-    </label>
-
-    <label>
-      School:
-      <input type="text" formControlName="school">
-    </label>
-
-    <label>
-      Graduation Year:
-      <input type="text" formControlName="graduation">
-    </label>
-  </div>
-
+    </ion-grid>
+  </form>
 </ion-content>
